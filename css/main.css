@@ -1,0 +1,77 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.robot {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+
+}
+img {
+  width: 100%;
+  display: block;
+}
+
+.body {
+  width: 320px;
+  display: block;
+
+
+}
+
+.brain {
+  width: 46px;
+  position: absolute;
+  left: -200em;
+}
+
+.head-left {
+  width: 125px;
+  position: absolute;
+  bottom: 53px;
+  left: 2.2em;
+  transition: all 1000ms linear;
+
+}
+
+.head-right {
+  width: 125px;
+  position: absolute;
+  bottom: 53px;
+  right: 2.2em;
+  transition: all 1000ms linear;
+}
+
+h1 {
+  background-color: darkslategray;
+  margin: 0em;
+  padding: .5em;
+  text-align: center;
+  font-family: 'Contrail One', cursive;
+  color: #fff;
+}
+
+header {
+  background-color: darkblue;
+  padding-top: 3em;
+  overflow: hidden;
+
+}
+
+header:hover .brain {
+  left: 8.6em;
+  bottom: 115px;
+}
+
+header:hover .head-right {
+  right: 2px;
+}
+
+header:hover .head-left {
+  left: 2px;
+}
